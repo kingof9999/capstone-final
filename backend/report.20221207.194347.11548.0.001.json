@@ -1,0 +1,404 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20221207.194347.11548.0.001.json",
+    "dumpEventTime": "2022-12-07T19:43:47Z",
+    "dumpEventTimeStamp": "1670417027750",
+    "processId": 11548,
+    "cwd": "D:\\AWS\\Capstone\\capstone-final\\backend",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:/Users/lequa/AppData/Roaming/npm/node_modules/serverless/bin/serverless.js",
+      "deploy",
+      "-v",
+      "--aws-profile",
+      "serverless"
+    ],
+    "nodejsVersion": "v12.8.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.8.0",
+      "v8": "7.5.288.22-node.16",
+      "uv": "1.30.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.1",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.8.0/node-v12.8.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.8.0/node-v12.8.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.8.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19045",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz",
+        "speed": 2395,
+        "user": 6382765,
+        "nice": 0,
+        "sys": 5471062,
+        "idle": 35346140,
+        "irq": 249109
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz",
+        "speed": 2395,
+        "user": 6702187,
+        "nice": 0,
+        "sys": 5628234,
+        "idle": 34869171,
+        "irq": 39640
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz",
+        "speed": 2395,
+        "user": 8100484,
+        "nice": 0,
+        "sys": 6920718,
+        "idle": 32178390,
+        "irq": 40109
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-3517U CPU @ 1.90GHz",
+        "speed": 2395,
+        "user": 9046390,
+        "nice": 0,
+        "sys": 10167078,
+        "idle": 27986125,
+        "irq": 24562
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi 3",
+        "internal": false,
+        "mac": "dc:85:de:5b:18:c7",
+        "address": "fe80::195f:762:dced:ceae",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 21
+      },
+      {
+        "name": "Wi-Fi 3",
+        "internal": false,
+        "mac": "dc:85:de:5b:18:c7",
+        "address": "192.168.0.4",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-MVNTMSP"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff77cb76d99",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff77cb7b38c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28780"
+    },
+    {
+      "pc": "0x00007ff77cb7a338",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24600"
+    },
+    {
+      "pc": "0x00007ff77cc64f3b",
+      "symbol": "v8::base::CPU::has_sse+37691"
+    },
+    {
+      "pc": "0x00007ff77d44bc1e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff77d433f6a",
+      "symbol": "v8::SharedArrayBuffer::Externalize+842"
+    },
+    {
+      "pc": "0x00007ff77d2c567c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff77d2cd59f",
+      "symbol": "v8::internal::Heap::OldGenerationSizeOfObjects+4879"
+    },
+    {
+      "pc": "0x00007ff77d2c3843",
+      "symbol": "v8::internal::Heap::CollectGarbage+1235"
+    },
+    {
+      "pc": "0x00007ff77d2c20d4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2292"
+    },
+    {
+      "pc": "0x00007ff77d2e0bb5",
+      "symbol": "v8::internal::Factory::NewFillerObject+53"
+    },
+    {
+      "pc": "0x00007ff77d096f2d",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+3757"
+    },
+    {
+      "pc": "0x00007ff77d86b06d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+614605"
+    },
+    {
+      "pc": "0x0000034c639b9551",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2160156672,
+    "totalCommittedMemory": 2160156672,
+    "usedMemory": 2146384416,
+    "availableMemory": 46314416,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 4718592,
+        "committedMemory": 4718592,
+        "capacity": 2356488,
+        "used": 1346456,
+        "available": 1010032
+      },
+      "old_space": {
+        "memorySize": 1667641344,
+        "committedMemory": 1667641344,
+        "capacity": 1665186368,
+        "used": 1660126968,
+        "available": 5059400
+      },
+      "code_space": {
+        "memorySize": 2260992,
+        "committedMemory": 2260992,
+        "capacity": 1909952,
+        "used": 1909952,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 20451328,
+        "committedMemory": 20451328,
+        "capacity": 18757040,
+        "used": 18757040,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 464199680,
+        "committedMemory": 464199680,
+        "capacity": 463661736,
+        "used": 463661736,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550304,
+        "used": 550304,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2356488,
+        "used": 0,
+        "available": 2356488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 517.843,
+    "kernelCpuSeconds": 28,
+    "cpuConsumptionPercent": 94.9292,
+    "maxRss": 2104668160,
+    "pageFaults": {
+      "IORequired": 3023649,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 9169,
+      "writes": 29
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\",
+    "ACLOCAL_PATH": "C:\\Program Files\\Git\\mingw64\\share\\aclocal;C:\\Program Files\\Git\\usr\\share\\aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\lequa\\AppData\\Roaming",
+    "AWS_ACCESS_KEY_ID": "AKIA2OM3LL32QMN73U7T",
+    "AWS_DEFAULT_REGION": "us-east-1",
+    "AWS_SECRET_ACCESS_KEY": "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",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_2440_VBTVNVIEHQOLAIGQ",
+    "COLORTERM": "truecolor",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-MVNTMSP",
+    "COMSPEC": "C:\\Windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "C:/Program Files/Git/etc/config.site",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "133139983538284747",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "DISPLAY": "needs-to-be-defined",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "C:\\Program Files\\Git\\bin",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GIT_ASKPASS": "c:\\Users\\lequa\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "HOME": "C:\\Users\\lequa",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\lequa",
+    "HOSTNAME": "DESKTOP-MVNTMSP",
+    "INFOPATH": "C:\\Program Files\\Git\\usr\\local\\info;C:\\Program Files\\Git\\usr\\share\\info;C:\\Program Files\\Git\\usr\\info;C:\\Program Files\\Git\\share\\info",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\lequa\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-MVNTMSP",
+    "MANPATH": "C:\\Program Files\\Git\\mingw64\\local\\man;C:\\Program Files\\Git\\mingw64\\share\\man;C:\\Program Files\\Git\\usr\\local\\man;C:\\Program Files\\Git\\usr\\share\\man;C:\\Program Files\\Git\\usr\\man;C:\\Program Files\\Git\\share\\man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "C:/Program Files/Git/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "C:/Program Files/Git/mingw64",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OLDPWD": "D:/AWS/Capstone/capstone-final",
+    "ORIGINAL_PATH": "C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\lequa\\bin;C:\\Program Files\\Java\\jdk-19\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\dotnet;C:\\Program Files (x86)\\dotnet;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\GnuWin32\\bin\\zip.exe;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Amazon\\AWSCLIV2;C:\\Program Files\\PostgreSQL\\15\\lib;C:\\Program Files\\PostgreSQL\\15\\bin;C:\\kube;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\nodejs;C:\\Users\\lequa\\AppData\\Local\\Programs\\Python\\Python311\\Scripts;C:\\Users\\lequa\\AppData\\Local\\Programs\\Python\\Python311;C:\\Users\\lequa\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lequa\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\PostgreSQL\\15\\lib;C:\\Users\\lequa\\AppData\\Roaming\\npm",
+    "ORIGINAL_TEMP": "C:/Users/lequa/AppData/Local/Temp",
+    "ORIGINAL_TMP": "C:/Users/lequa/AppData/Local/Temp",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "OneDrive": "C:\\Users\\lequa\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\lequa\\OneDrive",
+    "PATH": "C:\\Users\\lequa\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\local\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\lequa\\bin;C:\\Program Files\\Java\\jdk-19\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0;C:\\Windows\\System32\\OpenSSH;C:\\Program Files\\dotnet;C:\\Program Files (x86)\\dotnet;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\GnuWin32\\bin\\zip.exe;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Amazon\\AWSCLIV2;C:\\Program Files\\PostgreSQL\\15\\lib;C:\\Program Files\\PostgreSQL\\15\\bin;C:\\kube;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Program Files\\nodejs;C:\\Users\\lequa\\AppData\\Local\\Programs\\Python\\Python311\\Scripts;C:\\Users\\lequa\\AppData\\Local\\Programs\\Python\\Python311;C:\\Users\\lequa\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\lequa\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\PostgreSQL\\15\\lib;C:\\Users\\lequa\\AppData\\Roaming\\npm;C:\\Program Files\\Git\\usr\\bin\\vendor_perl;C:\\Program Files\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "C:\\Program Files\\Git\\mingw64\\lib\\pkgconfig;C:\\Program Files\\Git\\mingw64\\share\\pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3a09",
+    "PROGRAMFILES": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "D:/AWS/Capstone/capstone-final/backend",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "SESSIONNAME": "Console",
+    "SHELL": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "2",
+    "SSH_ASKPASS": "C:/Program Files/Git/mingw64/bin/git-askpass.exe",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\Windows",
+    "TEMP": "C:\\Users\\lequa\\AppData\\Local\\Temp",
+    "TERM": "xterm-256color",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.73.1",
+    "TMP": "C:\\Users\\lequa\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\lequa\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-MVNTMSP",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-MVNTMSP",
+    "USERNAME": "lequa",
+    "USERPROFILE": "C:\\Users\\lequa",
+    "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "--ms-enable-electron-run-as-node",
+    "VSCODE_GIT_ASKPASS_MAIN": "c:\\Users\\lequa\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "C:\\Users\\lequa\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-367ba367c1-sock",
+    "WINDIR": "C:\\Windows",
+    "_": "C:/Program Files/nodejs/node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\System32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\SYSTEM32\\powrprof.dll",
+    "C:\\Windows\\SYSTEM32\\UMPDC.dll",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\bcryptprimitives.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\Windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\Windows\\System32\\fwpuclnt.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\wshbth.dll",
+    "C:\\Windows\\system32\\NLAapi.dll",
+    "C:\\Windows\\System32\\winrnr.dll"
+  ]
+}
